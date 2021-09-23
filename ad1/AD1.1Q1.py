@@ -2,7 +2,7 @@
 #Programa Principal
 entrada = input("Digite um número inteiro ou tecle enter para sair: ")
 pi = 3.1415
-while entrada != "":
+while entrada != "": # loop
     raio = int(entrada)
     if raio %2 != 0:
         perimetro = 2*pi*raio

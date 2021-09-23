@@ -18,7 +18,7 @@ while cont < qtdEntrada:
         maior = entrada
     elif entrada < menor:
         menor = entrada
-
+# Calcula média
 media = soma / qtdEntrada
 print(f'''\nSoma: {soma:d}
 Média: {media:.2f}
