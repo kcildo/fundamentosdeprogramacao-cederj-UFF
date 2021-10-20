@@ -34,4 +34,4 @@ if frases == []:
 else:
     repetidas, qtdRepeat = palavrasRepetidas(frases)
     escrevePalavras(repetidas)
-    print(f'Ocorreu(ram) {qtdRepeat} vez(es)')
+    print(f'Ocorreu(ram) {qtdRepeat} vez(es).')
