@@ -10,9 +10,9 @@ def leEntrada(qtd):
         for palavra in partes:
             linhas.append(palavra)
         cont += 1
-    if linhas == '':
-        print('Nenhuma palavra foi lida!')
-        return None
+    # if linhas == []:
+    #     print('Nenhuma palavra foi lida!')
+    #     return None
     return linhas
 def palavrasRepetidas(palavras):
     listaRepetidas = []
@@ -29,6 +29,9 @@ def escrevePalavras(palavras):
 #Programa Principal
 qtdentrada = int(input('Digite a quantidade de linhas de texto a ser escrito: '))
 frases = leEntrada(qtdentrada)
-repetidas, qtdRepeat = palavrasRepetidas(frases)
-escrevePalavras(repetidas)
-print(f'Ocorreu(ram) {qtdRepeat} vez(es)')
+if frases == []:
+    print('Nenhuma palavra foi lida!')
+else:
+    repetidas, qtdRepeat = palavrasRepetidas(frases)
+    escrevePalavras(repetidas)
+    print(f'Ocorreu(ram) {qtdRepeat} vez(es)')
