@@ -10,9 +10,6 @@ def leEntrada(qtd):
         for palavra in partes:
             linhas.append(palavra)
         cont += 1
-    # if linhas == []:
-    #     print('Nenhuma palavra foi lida!')
-    #     return None
     return linhas
 def palavrasRepetidas(palavras):
     listaRepetidas = []
